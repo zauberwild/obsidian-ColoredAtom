@@ -6,6 +6,6 @@ A theme for Obsidian based on Atom's One Dark and One Light themes.
 
 ## Installation
 
-1. Download obsidian.css to your Obsidian vault folder
-2. In Obsidian, click Settings -> Plugins make sure `Custom CSS` is enabled
-3. Pick either light or dark theme in Obsidian's appearance settings!
+1. Download `ColoredAtom.css`
+2. Move it into your `.obsidian/themes` folder
+3. Change your theme in the Vault Settings
