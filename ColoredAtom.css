@@ -1,0 +1,430 @@
+/* * VARIABLES */
+.theme-dark {
+	--background-primary: #272b34;
+	--background-primary-alt: #20242b;
+	--background-secondary: #20242b;
+	--background-secondary-alt: #161a1f;
+	--background-accent: #000;
+	--background-modifier-border: #424958;
+	--background-modifier-form-field: rgba(0, 0, 0, 0.3);
+	--background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22);
+	--background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+	--background-modifier-success: #539126;
+	--background-modifier-error: #3d0000;
+	--background-modifier-error-rgb: 61, 0, 0;
+	--background-modifier-error-hover: #470000;
+	--background-modifier-cover: var(--background-secondary-alt);
+	--text-accent: #61afef;
+	--text-accent-hover: #69bafd;
+	--text-normal: #dcddde;
+	--text-muted: #888;
+	--text-faint: rgb(81, 86, 99);
+	--text-error: #e16d76;
+	--text-error-hover: #c9626a;
+	--text-highlight-bg: rgba(255, 251, 0, 0.39);
+	--text-selection: rgba(0, 122, 255, 0.2);
+	--text-on-accent: #dcddde;
+	--text-mono: #98c379;
+	--interactive-normal: #20242b;
+	--interactive-hover: #353b47;
+	--interactive-accent: #4c78cc;
+	--interactive-accent-rgb: 76, 120, 204;
+	--interactive-accent-hover: #5082df;
+	--scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+	--scrollbar-bg: rgba(255, 255, 255, 0.05);
+	--scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+	--panel-border-color: #18191e;
+	--gray-1: #5C6370;
+	--gray-2: #abb2bf;
+	--red: #e06c75;
+	--orange: #d19a66;
+	--green: #98c379;
+	--aqua: #56b6c2;
+	--purple: #c678dd;
+	--blue: #61afef;
+	--yellow: #e5c07b;
+
+	--heading1: #e06c75;
+	--heading2: #d88e49;
+	--heading3: #e5cc7b;
+	--heading4: #98c379;
+	--heading5: #56b6c2;
+	--heading6: #c678dd;
+
+}
+
+.theme-light {
+	--background-primary: #fafafa;
+	--background-primary-alt: #eaeaeb;
+	--background-secondary: #eaeaeb;
+	--background-secondary-alt: #dbdbdc;
+	--background-accent: #fff;
+	--background-modifier-border: #dbdbdc;
+	--background-modifier-form-field: #fff;
+	--background-modifier-form-field-highlighted: #fff;
+	--background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+	--background-modifier-success: #A4E7C3;
+	--background-modifier-error: #e68787;
+	--background-modifier-error-rgb: 230, 135, 135;
+	--background-modifier-error-hover: #FF9494;
+	--background-modifier-cover: rgba(0, 0, 0, 0.8);
+	--text-accent: #1592ff;
+	--text-accent-hover: #2d9dff;
+	--text-normal: #383a42;
+	--text-muted: #8e8e90;
+	--text-faint: #999999;
+	--text-error: #e75545;
+	--text-error-hover: #f86959;
+	--text-highlight-bg: rgba(255, 255, 0, 0.4);
+	--text-selection: rgba(0, 122, 255, 0.15);
+	--text-on-accent: #f2f2f2;
+	--interactive-normal: #eaeaeb;
+	--interactive-hover: #dbdbdc;
+	--interactive-accent-rgb: 21, 146, 255;
+	--interactive-accent: #5871ef;
+	--interactive-accent-hover: #445bd1;
+	--scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2);
+	--scrollbar-bg: rgba(0, 0, 0, 0.05);
+	--scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
+	--panel-border-color: #dbdbdc;
+	--gray-1: #383a42;
+	--gray-2: #383a42;
+	--red: #e75545;
+	--green: #4ea24c;
+	--blue: #3d74f6;
+	--purple: #a625a4;
+	--aqua: #0084bc;
+	--yellow: #e0b700;
+	--orange: #986800;
+
+	--heading1: #e06c75;
+	--heading2: #d88e49;
+	--heading3: #e5cc7b;
+	--heading4: #98c379;
+	--heading5: #56b6c2;
+	--heading6: #c678dd;
+}
+
+
+
+
+
+
+body {
+	-webkit-font-smoothing: auto;
+}
+
+
+@media screen {
+
+	/* * FILE HEADER */
+	.workspace-split.mod-root>.workspace-leaf:first-of-type:last-of-type .view-header {
+		border-bottom: none;
+	}
+
+	.title-bar {
+		background-color: var(--background-secondary-alt);
+	}
+
+
+	/* * MEDIA: images, math formulas, tables */
+	.markdown-preview-view img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.markdown-preview-view table {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+
+	/* * HEADINGS */
+	/* normal headings */
+	.markdown-preview-view h1, .cm-header-1 {
+		color: var(--heading1);
+	}
+
+	.markdown-preview-view h2, .cm-header-2 {
+		color: var(--heading2);
+	}
+
+	.markdown-preview-view h3, .cm-header-3 {
+		color: var(--heading3);
+	}
+
+	.markdown-preview-view h4, .cm-header-4 {
+		color: var(--heading4);
+	}
+
+	.markdown-preview-view h5, .cm-header-5 {
+		color: var(--heading5);
+	}
+
+	.markdown-preview-view h6, .cm-header-6 {
+		color: var(--heading6);
+	}
+
+
+	/* links in headings */
+	.markdown-preview-view h1 a, .cm-header-1 {
+		color: var(--heading1);
+	}
+
+	.markdown-preview-view h2 a, .cm-header-2 {
+		color: var(--heading2);
+	}
+
+	.markdown-preview-view h3 a, .cm-header-3 {
+		color: var(--heading3);
+	}
+
+	.markdown-preview-view h4 a, .cm-header-4 {
+		color: var(--heading4);
+	}
+
+	.markdown-preview-view h5 a, .cm-header-5 {
+		color: var(--heading5);
+	}
+
+	.markdown-preview-view h6 a, .cm-header-6 {
+		color: var(--heading6);
+	}
+
+	.markdown-preview-view h1 a, .markdown-preview-view h2 a, .markdown-preview-view h3 a,
+	.markdown-preview-view h4 a, .markdown-preview-view h5 a, .markdown-preview-view h6 a {
+		text-decoration: underline !important;
+	}
+
+
+
+
+
+
+	/* * CODE BLOCKS */
+	/* both in PREVIEW MODE */
+	.markdown-preview-view code {
+		color: var(--text-mono);
+		font-family: var(--font-monospace);
+		border: 1px solid var(--background-secondary-alt);
+	}
+
+	/* multiple line in PREVIEW MODE */
+	pre {
+		border: 1px solid var(--background-secondary-alt);
+	}
+
+	/* inline in EDIT MODE */
+	.cm-s-obsidian span.cm-inline-code {
+		color: var(--text-mono);
+		font-family: var(--font-monospace);
+	}
+
+	/* multiple line in EDIT MODE */
+	.cm-s-obsidian .HyperMD-codeblock {
+		color: var(--text-mono);
+		font-family: var(--font-monospace);
+	}
+
+
+	/* * QUOTE BLOCK */
+	.markdown-preview-view blockquote {
+		border-radius: 4px;
+	}
+
+	/* * LINKS */
+	.markdown-preview-view a.internal-link {
+		text-decoration: none;
+	}
+
+	.markdown-preview-view a.internal-link:hover {
+		text-decoration: underline;
+	}
+
+
+	/* * TAGS */
+	a.tag {
+		color: var(--yellow);
+		background-color: var(--background-primary-alt);
+		text-decoration: none;
+		padding: 2px 4px;
+		border-radius: 4px;
+	}
+
+	a.tag:hover {
+		color: var(--yellow);
+		text-decoration-line: underline;
+	}
+
+
+	/* * TASK LIST */
+	.markdown-preview-view .task-list-item-checkbox:checked {
+		filter: hue-rotate(5deg) saturate(60%) brightness(110%);
+		/* goal:		hsl(219,  56%, 55%) */
+		/* currently:	hsl(212, 100%, 50%) */
+	}
+
+
+	/* * TEXT FORMATTING */
+	strong {
+		font-weight: bolder;
+	}
+
+
+	/* opened file */
+	body:not(.is-grabbing) .nav-file .nav-file-title.is-active:hover, body:not(.is-grabbing) .nav-folder .nav-folder-title.is-active:hover {
+		--background-secondary-alt: var(--interactive-accent);
+	}
+
+	.nav-file-title.is-active {
+		background-color: var(--interactive-accent);
+	}
+
+	/* other files */
+	body:not(.is-grabbing) .nav-file .nav-file-title:hover:not(.is-active), body:not(.is-grabbing) .nav-folder .nav-folder-title:hover:not(.is-active) {
+		--background-secondary-alt: transparent;
+	}
+
+}
+
+
+
+
+/* * ### ### ### PDF ZONE ### ### ### */
+.theme-dark {
+	--pdf-text-normal: #333333;
+	--pdf-text-accent: #61afef;
+	--pdf-code-background-color: #f3f4f4;
+	--pdf-code-background-border-color: #e7eaed;
+	--pdf-code-color: var(--pdf-text-normal);
+	--pdf-quote-border-color: #dddddd;
+	--pdf-text-highlight-bg: #ffff59;
+	--pdf-table-header-bg: #f8f8f8;
+	--pdf-table-border: #dfe2e5;
+}
+
+.theme-light {
+	--pdf-text-normal: #333333;
+	--pdf-text-accent: #61afef;
+	--pdf-code-background-color: #f3f4f4;
+	--pdf-code-background-border-color: #e7eaed;
+	--pdf-code-color: var(--pdf-text-normal);
+	--pdf-quote-border-color: #dddddd;
+	--pdf-text-highlight-bg: var(--text-highlight-bg);
+	--pdf-table-header-bg: #f8f8f8;
+	--pdf-table-border: #dfe2e5;
+}
+
+
+@media print {
+
+	/* * GENERAL FORMATTING */
+	p, a, h1, h2, h3, h4, h5, h6, th, td, li {
+		color: var(--pdf-text-normal) !important;
+		font-size: 14px;
+	}
+
+	/* * links */
+	a {
+		text-decoration: underline !important;
+		color: var(--pdf-text-accent) !important;
+	}
+
+	/* * tags */
+	a.tag {
+		background-color: var(--pdf-code-background-color) !important;
+		border: 1px solid #e7eaed !important;
+		text-decoration: underline !important;
+		color: var(--pdf-text-accent) !important;
+	}
+
+	/* * HEADINGS */
+	h1, h1 a {
+		font-size: 26px !important;
+		font-weight: bolder;
+	}
+
+	h2, h2 a {
+		font-size: 22px !important;
+		font-weight: bolder;
+	}
+
+	h3, h3 a {
+		font-size: 20px !important;
+		font-weight: bolder;
+	}
+
+	h4, h4 a {
+		font-size: 18px !important;
+		font-weight: bolder;
+	}
+
+	h5, h5 a {
+		font-size: 16px !important;
+		font-weight: bold;
+	}
+
+	h6, h6 a {
+		font-size: 15px !important;
+		font-weight: bold;
+	}
+
+
+	/* * CODE BLOCKS */
+	/* multiple line */
+	/* TODO: when defining languages in a code block, it will take the dark-themed letters and place them on bright background. */
+	/* TODO: Is there any workaround, so it would use the dark-themed syntax coloring? */
+	pre {
+		background-color: var(--pdf-code-background-color) !important;
+		border: 1px solid var(--pdf-code-background-border-color) !important;
+	}
+
+	/* inline */
+	:not(pre) code {
+		font-size: 14px !important;
+		color: var(--pdf-code-color) !important;
+		background-color: var(--pdf-code-background-color) !important;
+		border: 1px solid var(--pdf-code-background-border-color);
+	}
+
+
+	/* * QUOTE BLOCK */
+	blockquote {
+		border-color: var(--pdf-quote-border-color) !important;
+	}
+
+	/* * HIGHLIGHTED TEXT */
+	mark {
+		background-color: var(--pdf-text-highlight-bg) !important;
+	}
+
+	/* * TABLES */
+	table {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	td {
+		border: 1px solid var(--pdf-table-border) !important;
+	}
+
+	th {
+		background-color: var(--pdf-table-header-bg) !important;
+		border: 1px solid var(--pdf-table-border) !important;
+	}
+
+
+	/* * IMAGES */
+	img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	/* * LINE BREAK AFTER HORIZONTAL LINE */
+	hr {
+		break-after: page;
+		visibility: hidden;
+	}
+}
