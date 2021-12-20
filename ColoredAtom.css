@@ -126,6 +126,10 @@ body {
 		background-color: var(--background-secondary-alt);
 	}
 
+	.cm-s-obsidian .cm-math {
+		color: var(--text-mono);
+	}
+
 
 	/* * MEDIA: images, math formulas, tables */
 	.markdown-preview-view img {
