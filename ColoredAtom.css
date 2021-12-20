@@ -339,6 +339,7 @@ body {
 	a.tag {
 		background-color: var(--pdf-code-background-color) !important;
 		border: 1px solid #e7eaed !important;
+		border-radius: 4px;
 		text-decoration: underline !important;
 		color: var(--pdf-text-accent) !important;
 	}
@@ -396,6 +397,7 @@ body {
 	/* * QUOTE BLOCK */
 	blockquote {
 		border-color: var(--pdf-quote-border-color) !important;
+		border-radius: 4px;
 	}
 
 	/* * HIGHLIGHTED TEXT */
