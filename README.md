@@ -1,3 +1,5 @@
+***massively outdated***
+
 # Obsidian Atom
 
 A theme for Obsidian based on Atom's One Dark and One Light themes.
